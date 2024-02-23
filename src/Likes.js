@@ -30,7 +30,7 @@ function mapDispatchToProps(dispatch){
         // TODO: почему мы можем возвращать и не возвращать dispdtch
         onDecrementLikes: ()=>{
             console.log('click');
-            const action = {type: 'DECREMENT'};
+            // const action = {type: 'DECREMENT'};
             dispatch(decrementLikes());
         }
         // onDecrementLikes: ()=>dispatch(decrementLikes()),

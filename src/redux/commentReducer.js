@@ -1,5 +1,4 @@
 import {COMMENT_CREATE, COMMENT_DELETE, COMMENT_UPDATE, COMMENTS_LOAD} from "./types";
-import comments from "../Comments";
 import uniqid from "uniqid";
 
 const initialState = {

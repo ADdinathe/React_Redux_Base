@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
-import {createComment, deleteComment, updateComment} from "./redux/actions";
-import uniqid from "uniqid";
+import { deleteComment, updateComment} from "./redux/actions";
 import {useDispatch} from "react-redux";
 
 function SingleComment(props){
@@ -14,7 +13,7 @@ function SingleComment(props){
         if(text){
             setTextComment(text);
         }
-     },[])
+     },[text])
 
     const handleInput = (e)=>{
         // console.log('input >>',e.target.value);
